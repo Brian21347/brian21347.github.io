@@ -3,7 +3,7 @@ export default function Navbar() {
         <nav>
             <div className="flex static pt-3 pb-3 items-center justify-between text-slate-700 bg-opacity-50 bg-white">
                 <div className="flex static pl-3">
-                    <a href="/page" className="bg-slate-300 rounded p-1">
+                    <a href="#" className="bg-slate-300 rounded p-1">
                         <img src="home.png" alt="Home" className="w-6 h-6"></img>
                     </a>
                 </div>
