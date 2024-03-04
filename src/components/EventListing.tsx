@@ -1,23 +1,30 @@
 export default function EventListing(props: any) {
-    const alt = props.time;
-    const eventName = props.eventName;
-    const link = props.link;
-    const role = props.role;
-    const time = props.time;
-    const description = props.description;
+    type Role = {title: string, time: string, description: string}
+    type Activity = { imgSrc: string, imgAlt: string, eventName: string, eventLink: string, roles: Array<Role> }
 
     return (
-        <div className="flex items-center text-slate-800">
-            <img src={props.src} alt={alt} className="rounded-xl w-[10rem]"/>
-            
-            <div className="bg-white bg-opacity-50 rounded-lg p-2">
-                <a href={link} className="hover:text-sky-800 font-bold">
-                    {eventName}
-                </a>
-            <p className="text-slate-500">{role}, <i>{time}</i></p>
-            <br/>
-            <p>{description}</p>
-            </div>
-        </div>
+        <>
+            {props.activities.map((activity: Activity) => (
+                <div className="flex items-center text-slate-800">
+                    <img src={activity.imgSrc} alt={activity.imgAlt} className="rounded-xl w-[10rem]" />
+                    <div className="bg-white bg-opacity-50 rounded-lg p-2 ml-10">
+                        <a href={activity.eventLink} className="hover:text-sky-800 font-bold">
+                            {activity.eventName}
+                        </a>
+                        {activity.roles.map((element: Role) => (
+                            <div>
+                                <br/>
+                                <div className="float-root text-slate-500 font-semi-bold">
+                                    <p className="float-left"><i>{element.title}</i></p>
+                                    <p className="float-right">{element.time}</p>
+                                </div>
+                                <br />
+                                <p>{element.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            ))}
+        </>
     )
 }
