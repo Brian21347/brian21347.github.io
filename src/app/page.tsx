@@ -94,7 +94,6 @@ export default function Home() {
     <body>
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-500 h-max">
         <Navbar/>
-
         <div className="p-20">
         {/* Short description */}
         <div className="flex flex-col justify-center items-center gap-x-4 text-slate-600 font-semibold text-center">
@@ -105,8 +104,15 @@ export default function Home() {
             I am a sophmore at GSMST and I am extremely passionate about programming.
           </p>
         </div>
+      </div>
 
+      <div className="p-20 bg-slate-200">
         {/* Activities */}
+        <div className="flex items-center">
+          <div className="flex-1 border-t-2 border-slate-400"></div>
+          <span className="px-3 text-slate-700 text-m">Activities</span>
+          <div className="flex-1 border-t-2 border-slate-400"></div>
+        </div>
         <div className="justify-center">
           <EventListing activities={activities}/>
         </div>
