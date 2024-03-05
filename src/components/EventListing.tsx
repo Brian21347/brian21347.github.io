@@ -1,5 +1,5 @@
 export default function EventListing(props: any) {
-    type Role = {title: string, time: string, description: string}
+    type Role = { title: string, time: string, description: string }
     type Activity = { imgSrc: string, imgAlt: string, eventName: string, eventLink: string, roles: Array<Role> }
 
     return (
@@ -13,7 +13,7 @@ export default function EventListing(props: any) {
                         </a>
                         {activity.roles.map((element: Role) => (
                             <div key={element.description}>
-                                <br/>
+                                <br />
                                 <div className="float-root text-slate-500 font-semi-bold">
                                     <p className="float-left italic">{element.title}</p>
                                     <p className="float-right">{element.time}</p>

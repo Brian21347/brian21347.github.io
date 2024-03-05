@@ -15,9 +15,9 @@ export default function Navbar() {
                                 Projects
                             </a>
                         </li>
-                            <a href="#" className="bg-slate-300 bg-opacity-50 rounded p-1 hover:text-sky-500">
-                                文
-                            </a>
+                        <a href="#" className="bg-slate-300 bg-opacity-50 rounded p-1 hover:text-sky-500">
+                            文
+                        </a>
                         <li>
                             <a href="#" className="bg-slate-300 bg-opacity-50 rounded p-1 hover:text-sky-500">
                                 Dark Mode
