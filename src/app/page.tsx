@@ -6,7 +6,7 @@ export default function Home() {
   type Activity = { imgSrc: string, imgAlt: string, eventName: string, eventLink: string, roles: Array<Role> }
   let activities: Array<Activity> = [
     {
-      imgSrc: "./ACBA.webp",
+      imgSrc: "./ACBA.png",
       imgAlt: "Atlanta Contemporary Basketball Association Logo",
       eventName: "Atlanta Contemporary Basketball Association",
       eventLink: "https://www.acba-us.com/about/",
@@ -83,6 +83,75 @@ export default function Home() {
       ]
     }
   ]
+  let awards: Array<Activity> = [
+    {
+      imgSrc: "./CodeQuestLogo.jpg",
+      imgAlt: "Code Quest Logo",
+      eventName: "Code Quest",
+      eventLink: "https://www.lockheedmartin.com/en-us/who-we-are/communities/codequest.html",
+      roles: [
+        {
+          title: "4th place at 2023 Code Quest",
+          time: "",
+          description: "Code Quest, an annual computer programming competition hosted by Lockheed Martin, stands as a prestigious platform for high school students. In the 2023 edition of Code Quest, my team represented GSMST at the Marietta location. We achieved an impressive score of 160 points, securing first place in the novice division and tying for fourth place overall."
+        },
+        {
+          title: "4th place at 2024 Code Quest",
+          time: "",
+          description: "In the 2023 edition of Code Quest, my team represented GSMST at the Marietta location. We achieved a score of 270 points, securing fourth place overall."
+        }
+      ]
+    },
+    {
+      imgSrc: "./NCSScholar.png",
+      imgAlt: "National Cyber Scholar Badge",
+      eventName: "National Cyber Scholar",
+      eventLink: "https://www.nationalcyberscholarship.org/scholarships-and-awards/awards-2024",
+      roles: [
+        {
+          title: "",
+          time: "2024",
+          description: "The National Cyber Scholar scholarship, awarded by the National Cyber Scholarship Foundation, is bestowed upon the most accomplished CyberStart players. It encompasses a $3,000 allocation for training materials, and I am honored to have been a recipient of this scholarship."
+        }
+      ]
+    },
+    {
+      imgSrc: "./GSMSTSeal.png",
+      imgAlt: "GSMST Seal",
+      eventName: "School Awards",
+      eventLink: "",
+      roles: [
+        {
+          title: "Fall Awards",
+          time: "2023",
+          description: "Recognition of academic excellence in the fall semester."
+        },
+        {
+          title: "Academic Leter",
+          time: "2023",
+          description: "Academic letter recognizes academic excellence (NGA > 94)."
+        }
+      ]
+    },
+    {
+      imgSrc: "./HackGwinnettLogo.png",
+      imgAlt: "Hack Gwinnet Logo",
+      eventName: "Hack Gwinnet",
+      eventLink: "https://hackgwinnett.github.io/",
+      roles: [
+        {
+          title: "2nd place at 2023 Hack Gwinnet",
+          time: "",
+          description: "Second palace in 28 projects for the project we developed during the hackathon."
+        },
+        {
+          title: "3rd place at 2022 Hack Gwinnet",
+          time: "",
+          description: "Third place in 45 teams for the project which we developed during the hackathon."
+        }
+      ]
+    }
+  ]
   
   return (
     <>
@@ -91,59 +160,49 @@ export default function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" href="./favicon.ico"/>
     </head>
-    <body>
+    <body className="">
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-500 h-max">
         <Navbar/>
-        <div className="p-20">
+        <div className="p-20 min-w-20 max-w-m">
         {/* Short description */}
-        <div className="flex flex-col justify-center items-center gap-x-4 text-slate-600 font-semibold text-center">
-          <h1 className="text-3xl mt-10 text-slate-800">
-            Hi! I am Brian Zhou
-          </h1>
-          <p className="text-lg mt-2">
-            I am a sophmore at GSMST and I am extremely passionate about programming.
-          </p>
-        </div>
-      </div>
-
-      <div className="p-20 bg-slate-200">
-        {/* Activities */}
-        <div className="flex items-center">
-          <div className="flex-1 border-t-2 border-slate-400"></div>
-          <span className="px-3 text-slate-700 text-m">Activities</span>
-          <div className="flex-1 border-t-2 border-slate-400"></div>
-        </div>
-        <div className="justify-center">
-          <EventListing activities={activities}/>
-        </div>
-
-          {/* Awards */}
-          {/*
-  1st place at Lockheed Martin’s Code Quest -- 9
-  Code Quest, an annual computer programming competition hosted by Lockheed Martin, stands as a prestigious platform for high school students. In the 2023 edition of Code Quest, my team represented GSMST at the Marietta location. We achieved an impressive score of 160 points, securing first place in the novice division and tying for third place overall.
-
-  National Cyber Scholar -- 10
-  The National Cyber Scholar scholarship, awarded by the National Cyber Scholarship Foundation, is bestowed upon the most accomplished CyberStart players. It encompasses a $3,000 allocation for training materials, and I am honored to have been a recipient of this scholarship.
-
-  Fall Awards -- 10
-  Recognition of academic excellence in the fall semester.
-
-  Hack Gwinnett 2023: 2nd place -- 10
-  Second palace in 28 projects for the project we developed during the hackathon.
-
-  Hack Gwinnett 2022: 3rd place -- 9
-  Third place in 45 teams for the project which we developed during the hackathon.
-
-  3rd place in school fair -- 10
-  Third in the material science category of GSMST’s research symposium. The research project was “Using Kudzu as a Substitute for Straw in the Production of Adobe.”
-
-  Academic letter -- 10
-  Academic letter recognizes academic excellence (NGA > 94).
-          */}
-          <div className="flex justify-center">
+          <div className="flex flex-col place-center gap-x-4 text-slate-600 font-semibold text-center">
+            <h1 className="text-3xl mt-10 text-slate-800">
+              Hi! I am Brian Zhou
+            </h1>
+            <p className="text-lg mt-2">
+              I am a sophmore at GSMST and I am extremely passionate about programming.
+            </p>
           </div>
         </div>
 
+        <div className="relative bg-gradient-to-b from-cyan-400 to-sky-600 h-full">
+        <div className="relative p-20 pt-10 bg-slate-200 w-[80%] m-auto rounded-xl">
+          {/* Activities */}
+          <div className="flex items-center mb-10">
+            <div className="flex-1 border-t-2 border-slate-400 border-dashed"></div>
+            <span className="px-3 text-slate-700 text-m">Activities</span>
+            <div className="flex-1 border-t-2 border-slate-400 border-dashed"></div>
+          </div>
+          <div className="justify-center">
+            <EventListing activities={activities}/>
+          </div>
+
+        </div>
+        </div>
+
+        <div className="relative bg-gradient-to-b from-sky-600 to-blue-700 h-full">
+        <div className="relative p-20 pt-10 bg-slate-200 w-[80%] m-auto rounded-xl">
+          {/* Awards */}
+          <div className="flex items-center mb-10">
+            <div className="flex-1 border-t-2 border-slate-400 border-dashed"></div>
+            <span className="px-3 text-slate-700 text-m">Awards</span>
+            <div className="flex-1 border-t-2 border-slate-400 border-dashed"></div>
+          </div>
+          <div className="justify-center">
+            <EventListing activities={awards}/>
+          </div>
+        </div>
+        </div>
       </div>
     </body>
     </>
