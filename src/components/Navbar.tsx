@@ -111,32 +111,6 @@ export default function Navbar() {
               </>
             )}
           </Popover>
-
-          {/* <div className="items-center font-semibold">
-            <ul className="flex items-center gap-x-8 pr-3">
-              <li>
-                <Link href="/#projects" className="bg-slate-300 bg-opacity-50 rounded p-1 hover:text-sky-500">
-                    <h2 className="">
-                        Projects
-                    </h2>
-                </Link>
-              </li>
-              <a
-                href="#"
-                className="bg-slate-300 bg-opacity-50 rounded p-1 hover:text-sky-500"
-              >
-                文
-              </a>
-              <li>
-                <a
-                  href="#"
-                  className="bg-slate-300 bg-opacity-50 rounded p-1 hover:text-sky-500"
-                >
-                  Dark Mode
-                </a>
-              </li>
-            </ul>
-          </div> */}
         </div>
       </nav>
     </header>
