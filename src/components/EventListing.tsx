@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function EventListing(props: any) {
   type Role = { title: string; time: string; description: string };
   type Activity = {
@@ -15,9 +17,11 @@ export default function EventListing(props: any) {
           className="flex items-start text-slate-800"
           key={activity.eventName}
         >
-          <img
+          <Image
             src={activity.imgSrc}
             alt={activity.imgAlt}
+            width={128}
+            height={128}
             className="rounded-xl w-[8rem]"
           />
           <div className="bg-white bg-opacity-50 rounded-lg p-2 ml-10">
