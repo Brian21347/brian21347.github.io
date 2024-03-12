@@ -10,7 +10,7 @@ export default function Example() {
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-          Options
+          Language
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -49,7 +49,7 @@ export default function Example() {
                     "block px-4 py-2 text-sm"
                   )}
                 >
-                  Account settings
+                  English
                 </a>
               )}
             </Menu.Item>

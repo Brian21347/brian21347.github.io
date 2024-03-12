@@ -24,7 +24,7 @@ const MobileNavLinks = (prop: { children: any; href: string }) => {
   );
 };
 
-export default function Navbar() {
+export default function Navbar({}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -41,7 +41,7 @@ export default function Navbar() {
   return (
     <header
       className={`w-full sticky z-50 top-0 bg-slate-50 ${
-        isScrolled && "shadow-xl shadow-sky-100"
+        isScrolled && "shadow-xl shadow-sky-100 min-w-full"
       }`}
     >
       <nav>
@@ -99,9 +99,10 @@ export default function Navbar() {
                           {ENG_navLinks.map(({ _id, title, href }) => (
                             <MobileNavLinks
                               href={href}
-                              children={title}
                               key={_id}
-                            />
+                            >
+                                {title}
+                            </MobileNavLinks>
                           ))}
                         </div>
                       </Popover.Panel>
