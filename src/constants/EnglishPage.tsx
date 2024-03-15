@@ -74,7 +74,7 @@ export const ENG_activitiesList: Array<Activity> = [
                 title: "National Cyber Scholar",
                 time: "10th grade",
                 description:
-                    "I participated in the world renowned cybersecurity game CyberStart America and received over 60,000 points on the platform.",
+                    "I participated in the world renowned cybersecurity game CyberStart America and received over 60,000 points on the platform. I am one of the 2000 or so students receiving the award in 2024.",
             },
         ],
     },
