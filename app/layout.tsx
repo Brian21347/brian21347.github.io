@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Brian's Personal Website",
-  description: "1234",
+  description: "Built with react, typescript, and next.js",
 };
 
 export default function RootLayout({
@@ -17,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <main>
+            {children}
+        </main>
       </body>
     </html>
   );

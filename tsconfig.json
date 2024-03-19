@@ -23,20 +23,17 @@
         ],
         "paths": {
             "@/*": [
-                "./src/*"
+                "./app/*"
             ],
             "@/style": [
-                "./src/styles/*"
+                "./app/styles/*"
             ],
             "@/components": [
-                "./src/components/*"
-            ],
-            "@/app": [
-                "./src/app/*"
+                "./app/components/*"
             ],
             "@/constants": [
-                "./src/constants"
-            ]
+                "./app/constants"
+            ],
         }
     },
     "include": [

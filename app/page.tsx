@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
       <div className="absolute inset-0 h-max">
         <Navbar />
         <About />
@@ -16,7 +15,6 @@ export default function Home() {
         <Awards />
         <Footer />
       </div>
-    </main>
   );
 }
 

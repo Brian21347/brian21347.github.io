@@ -7,7 +7,7 @@ export const ENG_navLinks = [
 
 export const ENG_activitiesList: Array<Activity> = [
     {
-        imgSrc: "./ACBA.png",
+        imgSrc: "/ACBA.png",
         imgAlt: "Atlanta Contemporary Basketball Association Logo",
         eventName: "Atlanta Contemporary Basketball Association",
         eventLink: "https://www.acba-us.com/about/",
