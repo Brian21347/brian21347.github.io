@@ -11,14 +11,14 @@ export default function NavLinks() {
         <Link
           key={props._id}
           href={props.href}
-          className="relative -mx-3 -my-2 rounded-lg py-2 text-base text-slate-600 transition-colors hover:shadow-lg hover:shadow-slate-100"
+          className="relative -mx-3 -my-2 rounded-lg py-2 text-base text-text0 transition-colors hover:text-sky4"
           onMouseEnter={() => setHovered(props._id)}
           onMouseLeave={() => setHovered(0)}
         >
           <AnimatePresence>
             {currentlyHovered === props._id && (
               <motion.span
-                className="absolute inset-0 rounded-lg bg-slate-200"
+                className="absolute inset-0 rounded-lg bg-slate1"
                 layoutId="hoverBackground"
                 initial={{opacity:0}}
                 animate={{opacity:1, transition: {duration: 0.1}}}

@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light, div.light > * {
+    // text box backgrounds
+    --slate-0: #f8fafc;
+    --slate-1: #cbd5e1;
+    --slate-2: #94a3b8;
+    --slate-3: #475569;
+    --slate-4: #334155;
+    --slate-5: #1e293b;
+    --slate-6: #0f172a;
+    --slate-7: #020617;
+
+    // text colors
+    --text-0: #000000;
+    --text-1: #111827;
+    --text-2: #1f2937;
+    --text-3: #374151;
+    --text-4: #4b5563;
+    --text-5: #6b7280;
+    --text-6: #9ca3af;
+    --text-7: #f9fafb;
+
+    // section backgrounds 
+    --teal-0: #ccfbf1;
+    --teal-1: #99f6e4;
+    --teal-2: #5eead4;
+    --teal-3: #2dd4bf;
+    --teal-4: #14b8a6;
+    --teal-5: #0d9488;
+    --teal-6: #0f766e;
+    --teal-7: #134e4a;
+    
+    --cyan-0: #cffafe;
+    --cyan-1: #67e8f9;
+    --cyan-2: #22d3ee;
+    --cyan-3: #06b6d4;
+    --cyan-4: #0891b2;
+    --cyan-5: #0e7490;
+    --cyan-6: #164e63;
+    --cyan-7: #083344;
+
+    --sky-0: #bae6fd;
+    --sky-1: #7dd3fc;
+    --sky-2: #38bdf8;
+    --sky-3: #0ea5e9;
+    --sky-4: #0284c7;
+    --sky-5: #0369a1;
+    --sky-6: #075985;
+    --sky-7: #082f49;
+
+    // clears
+    --clear-25: #000000bf;
+    --clear-35: #0000007f;
+    --clear-50: #0000005f;
+    --clear-75: #0000003f;
+}
+
+.dark, div.dark > * {
+    // text box backgrounds
+    --slate-0: #020617;
+    --slate-1: #0f172a;
+    --slate-2: #1e293b;
+    --slate-3: #334155;
+    --slate-4: #475569;
+    --slate-5: #94a3b8;
+    --slate-6: #cbd5e1;
+    --slate-7: #f8fafc;
+
+    // text colors
+    --text-0: #f9fafb;
+    --text-1: #9ca3af;
+    --text-2: #6b7280;
+    --text-3: #4b5563;
+    --text-4: #374151;
+    --text-5: #1f2937;
+    --text-6: #111827;
+    --text-7: #000000;
+
+    // section backgrounds 
+    --teal-0: #134e4a;
+    --teal-1: #0f766e;
+    --teal-2: #0d9488;
+    --teal-3: #14b8a6;
+    --teal-4: #2dd4bf;
+    --teal-5: #5eead4;
+    --teal-6: #99f6e4;
+    --teal-7: #ccfbf1;
+    
+    --cyan-0: #083344;
+    --cyan-1: #164e63;
+    --cyan-2: #0e7490;
+    --cyan-3: #0891b2;
+    --cyan-4: #06b6d4;
+    --cyan-5: #22d3ee;
+    --cyan-6: #67e8f9;
+    --cyan-7: #cffafe;
+
+    --sky-0: #082f49;
+    --sky-1: #075985;
+    --sky-2: #0369a1;
+    --sky-3: #0284c7;
+    --sky-4: #0ea5e9;
+    --sky-5: #38bdf8;
+    --sky-6: #7dd3fc;
+    --sky-7: #bae6fd;
+
+    // clears
+    --clear-25: #ffffffbf;
+    --clear-35: #ffffff7f;
+    --clear-50: #ffffff5f;
+    --clear-75: #ffffff3f;
+}

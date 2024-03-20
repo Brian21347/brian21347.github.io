@@ -9,7 +9,7 @@ export default function Logo() {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="w-10 h-10 relative -mx-3 -my-2 rounded-lg py-2 duration-300 transition-colors bg-slate-50 hover:bg-slate-200 hover:shadow-lg "
+        className="w-10 h-10 relative -mx-3 -my-2 rounded-lg py-2 duration-300 bg-slate0 hover:bg-slate1 stroke-text0 hover:stroke-sky4"
       >
         <path
           strokeLinecap="round"
