@@ -184,6 +184,19 @@ export const ENG_awardsList: Array<Activity> = [
             },
         ],
     },
+    {
+        imgSrc: "./CyberQuestLogo.png",
+        imgAlt: "Cyber Quest Logo",
+        eventName: "Cyber Quest",
+        eventLink: "https://www.lockheedmartin.com/en-us/who-we-are/communities/cyber-quest.html",
+        roles: [
+            {
+                title: "1st place at Cyber Quest",
+                time: "2024",
+                description: "In a team with four other people, I primarily focused on solving the web exploitation, simple problems, and some multi-step problems."
+            }
+        ]
+    },
 ];
 
 export const ENG_projects: Array<Activity> = [
