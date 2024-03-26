@@ -13,6 +13,8 @@ const config: Config = {
       sans: ["inter", ...defaultTheme.fontFamily.sans],
     },
     colors: {
+      white: "var(--white)",
+    
       // text box backgrounds
       slate0: "var(--slate-0)",
       slate1: "var(--slate-1)",

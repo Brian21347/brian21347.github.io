@@ -41,8 +41,8 @@ export default function Navbar({}) {
 
   return (
     <header
-      className={`w-full sticky z-50 top-0 bg-slate0 ${
-        isScrolled && "shadow-xl min-w-full"
+      className={`w-full sticky z-50 top-0 bg-slate2 ${
+        isScrolled && "shadow-sm min-w-full shadow-text2"
       }`}
     >
       <nav>
