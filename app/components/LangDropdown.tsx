@@ -7,7 +7,7 @@ const MenuItem = (props: { href: string; text: string }) => {
     <Menu.Item>
         <Link
           href={props.href}
-          className="block px-3 py-2 text-sm text-text0 hover:text-sky4 hover:bg-slate1 rounded-md"
+          className="block px-3 py-2 text-sm text-text-0 hover:text-sky-4 hover:bg-slate-1 rounded-md"
         >
           {props.text}
         </Link>
@@ -19,7 +19,7 @@ export default function Example() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-lg bg-white px-3 py-2 text-sm text-text0 ring-1 ring-inset ring-slate2 hover:bg-slate1 hover:text-sky4">
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-lg bg-white px-3 py-2 text-sm text-text-0 ring-1 ring-inset ring-slate-2 hover:bg-slate-1 hover:text-sky-4">
           Language
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function Example() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-min origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-slate2 ring-opacity-5 focus:outline-none bg-slate0">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-min origin-top-right rounded-lg shadow-lg ring-1 ring-slate-2 ring-opacity-5 focus:outline-none bg-slate-0">
           <div className="py-1">
             <MenuItem href="#" text="English"/>
             <MenuItem href="#" text="中文"/>

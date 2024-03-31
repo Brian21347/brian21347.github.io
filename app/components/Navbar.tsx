@@ -17,7 +17,7 @@ const MobileNavLinks = (prop: { children: any; href: string }) => {
   return (
     <Popover.Button
       as={Link}
-      className="block text-base leading-7 tracking-tight text-slate6 z-0 hover:bg-slate2 w-min px-3 py-2 rounded-lg"
+      className="block text-base leading-7 tracking-tight text-slate-6 z-0 hover:bg-slate-2 w-min px-3 py-2 rounded-lg"
       href={prop.href}
     >
       {prop.children}
@@ -41,12 +41,12 @@ export default function Navbar({}) {
 
   return (
     <header
-      className={`w-full sticky z-50 top-0 bg-slate2 ${
-        isScrolled && "shadow-sm min-w-full shadow-text2"
+      className={`w-full sticky z-50 top-0 bg-slate-2 ${
+        isScrolled && "shadow-sm min-w-full shadow-text-2"
       }`}
     >
       <nav>
-        <div className="flex static pt-3 pb-3 items-center justify-between text-slate6 bg-slate0 opacity-95 max-w-full mx-auto px-10">
+        <div className="flex static pt-3 pb-3 items-center justify-between text-slate6 bg-slate-0 opacity-95 max-w-full mx-auto px-10">
           <div className="relative z-30">
             <Logo />
           </div>
@@ -63,7 +63,7 @@ export default function Navbar({}) {
             {({ open }) => (
               <>
                 <Popover.Button
-                  className="relative z-30 -m-2 inline-flex items-center rounded-lg stroke-slate6 p-3 hover:bg-slate2 hover:stroke-slate5 active:slate6 [&:not(:focus-visible)]:focus-outline-none outline-none"
+                  className="relative z-30 -m-2 inline-flex items-center rounded-lg stroke-slate-6 p-3 hover:bg-slate-2 hover:stroke-slate-5 active:slate-6 [&:not(:focus-visible)]:focus-outline-none outline-none"
                   aria-labelledby="Toggle site navigation"
                 >
                   {({ open }) =>
@@ -83,7 +83,7 @@ export default function Navbar({}) {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-10 bg-slate0 backdrop:blur"
+                        className="fixed inset-0 z-10 bg-slate-0 backdrop:blur"
                       />
                       <Popover.Panel
                         static
@@ -95,7 +95,7 @@ export default function Navbar({}) {
                           y: -24,
                           transition: { duration: 0.2 },
                         }}
-                        className="absolute inset-x-0 top-0 z-10 origin-top rounded-b-2xl bg-slate-0 px-6 pb-6 pt-24 shadow-2xl shadow-slate3"
+                        className="absolute inset-x-0 top-0 z-10 origin-top rounded-b-2xl bg-slate-0 px-6 pb-6 pt-24 shadow-2xl shadow-slate-3"
                       >
                         <div className="">
                           {ENG_navLinks.map(({ _id, title, href }) => (
