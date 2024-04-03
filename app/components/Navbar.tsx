@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ENG_navLinks } from "@/constants/EnglishPage";
 import { useState, useEffect } from "react";
 import Dropdown from "@/components/LangDropdown";
-// import ThemeSwitch from "@/components/ThemeSwitch";
+import { ThemeSwitch } from "@/components/ThemeSwitch";
 
 const MobileNavLinks = (prop: { children: any; href: string }) => {
   return (
@@ -57,7 +57,8 @@ export default function Navbar({}) {
             <Dropdown />
             {/* <Button href="#" text="中" /> */}
             {/* <ThemeSwitch /> */}
-            <Button href="#" text="Dark mode" />
+            <ThemeSwitch />
+            {/* <Button href="#" text="Dark mode" /> */}
           </div>
           <Popover className="md:hidden">
             {({ open }) => (
