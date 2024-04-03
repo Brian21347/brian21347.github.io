@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="relative flex-col text-center bg-sky-400 p-10 font-semibold text-slate-600">
+    <div className="relative flex-col text-center bg-slate-0 p-10 font-semibold text-text-0">
       <div className="px-[25%]">
-        <div className="flex border-t-2 border-slate-500 border-dashed"></div>
+        <div className="flex border-t-2 border-slate-4 border-dotted"></div>
         <p>Github</p>
-        <div className="flex border-t-2 border-slate-500 border-dashed"></div>
+        <div className="flex border-t-2 border-slate-4 border-dotted"></div>
       </div>
       {/* GitHub logo */}
       <div className="items-center content-center justify-items-center">

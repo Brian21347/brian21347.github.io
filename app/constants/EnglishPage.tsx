@@ -7,7 +7,7 @@ export const ENG_navLinks = [
 
 export const ENG_activitiesList: Array<Activity> = [
     {
-        imgSrc: "/ACBA.png",
+        imgSrc: "./ACBA.png",
         imgAlt: "Atlanta Contemporary Basketball Association Logo",
         eventName: "Atlanta Contemporary Basketball Association",
         eventLink: "https://www.acba-us.com/about/",
@@ -183,6 +183,19 @@ export const ENG_awardsList: Array<Activity> = [
                     "I am a USACO silver medalist.",
             },
         ],
+    },
+    {
+        imgSrc: "./CyberQuestLogo.png",
+        imgAlt: "Cyber Quest Logo",
+        eventName: "Cyber Quest",
+        eventLink: "https://www.lockheedmartin.com/en-us/who-we-are/communities/cyber-quest.html",
+        roles: [
+            {
+                title: "1st place at Cyber Quest",
+                time: "2024",
+                description: "In a team with four other people, I primarily focused on solving the web exploitation, simple problems, and some multi-step problems."
+            }
+        ]
     },
 ];
 
