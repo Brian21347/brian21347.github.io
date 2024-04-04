@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-      <div className="dark absolute inset-0 h-max">
+      <div className="absolute inset-0 h-max">
         <Navbar />
         <About />
         <Projects />

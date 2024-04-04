@@ -2,7 +2,6 @@
 
 import NavLinks from "./NavLinks";
 import Logo from "./Logo";
-import Button from "./Button";
 import { Popover } from "@headlessui/react";
 import Link from "next/link";
 import { TbMenu2 } from "react-icons/tb";
@@ -55,10 +54,7 @@ export default function Navbar({}) {
           </div>
           <div className="flex gap-10 z-30">
             <Dropdown />
-            {/* <Button href="#" text="中" /> */}
-            {/* <ThemeSwitch /> */}
             <ThemeSwitch />
-            {/* <Button href="#" text="Dark mode" /> */}
           </div>
           <Popover className="md:hidden">
             {({ open }) => (

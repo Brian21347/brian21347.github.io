@@ -1,3 +1,6 @@
+"use client"
+
+
 export default function About() {
   return (
     <div id="about" className="p-20 min-w-20 max-w-m bg-slate-0 h-max">
