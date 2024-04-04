@@ -1,22 +1,11 @@
 import Image from "next/image";
+import { Activity, Role } from "@/constants/Types";
 
 export default function EventListing(props: any) {
-  type Role = { title: string; time: string; description: string };
-  type Activity = {
-    imgSrc: string;
-    imgAlt: string;
-    eventName: string;
-    eventLink: string;
-    roles: Array<Role>;
-  };
-
   return (
     <>
       {props.activities.map((activity: Activity) => (
-        <div
-          className="flex items-start text-text-0"
-          key={activity.eventName}
-        >
+        <div className="flex items-start text-text-0" key={activity.eventName}>
           <Image
             src={activity.imgSrc}
             alt={activity.imgAlt}
@@ -25,10 +14,7 @@ export default function EventListing(props: any) {
             className="rounded-xl w-[8rem]"
           />
           <div className="rounded-lg p-2 ml-10">
-            <a
-              href={activity.eventLink}
-              className="hover:text-sky-4 font-bold"
-            >
+            <a href={activity.eventLink} className="hover:text-sky-4 font-bold">
               {activity.eventName}
             </a>
             {activity.roles.map((element: Role) => (
