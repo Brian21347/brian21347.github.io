@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Activity, Role } from "@/constants/Types";
 
 export default function EventListing(props: any) {
@@ -6,13 +5,9 @@ export default function EventListing(props: any) {
     <>
       {props.activities.map((activity: Activity) => (
         <div className="flex items-start text-text-0" key={activity.eventName}>
-          <Image
-            src={activity.imgSrc}
-            alt={activity.imgAlt}
-            width={128}
-            height={128}
-            className="rounded-xl w-[8rem]"
-          />
+          <div className="hidden md:flex w-[12rem] rounded-lg">
+            <activity.image />
+          </div>
           <div className="rounded-lg p-2 ml-10">
             <a href={activity.eventLink} className="hover:text-sky-4 font-bold">
               {activity.eventName}

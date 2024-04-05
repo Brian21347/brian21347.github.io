@@ -1,4 +1,15 @@
 import { Project, Activity } from "@/constants/Types";
+import Image from "next/image";
+import ACBA from "../../public/images/ACBA.webp";
+import CodeQuest from "../../public/images/CodeQuestLogo.jpg";
+import CSClub from "../../public/images/CSClubLogo.png";
+import CyberQuest from "../../public/images/CyberQuestLogo.png";
+import CyberStart from "../../public/images/CyberStartAmericaLogo.png";
+import GSMST from "../../public/images/GSMSTSeal.png";
+import HackGwinnett from "../../public/images/HackGwinnettLogo.png";
+import Inspirit from "../../public/images/InspiritAI.png";
+import NCSScholar from "../../public/images/NCSScholar.png";
+import USACO from "../../public/images/USACOLogo.png";
 
 export const ENG_navLinks = [
   { _id: 1, title: "About", href: "#about" },
@@ -9,8 +20,14 @@ export const ENG_navLinks = [
 
 export const ENG_activitiesList: Array<Activity> = [
   {
-    imgSrc: "./ACBA.png",
-    imgAlt: "Atlanta Contemporary Basketball Association Logo",
+    image: () => {
+        return (
+            <Image
+            src={ACBA}
+            alt="ACBA Logo"
+            />
+        )
+    },
     eventName: "Atlanta Contemporary Basketball Association",
     eventLink: "https://www.acba-us.com/about/",
     roles: [
@@ -47,8 +64,11 @@ export const ENG_activitiesList: Array<Activity> = [
     ],
   },
   {
-    imgSrc: "./CSClubLogo.png",
-    imgAlt: "GSMST CS Club Logo",
+    image: () => {
+       return (
+          <Image src={CSClub} alt="GSMST CS Club Logo"/>
+       );
+    },
     eventName: "GSMST CS Club",
     eventLink: "https://gsmstcsclub.wixsite.com/gsmstcsc",
     roles: [
@@ -67,8 +87,11 @@ export const ENG_activitiesList: Array<Activity> = [
     ],
   },
   {
-    imgSrc: "./CyberStartAmericaLogo.png",
-    imgAlt: "Cyber Start America Logo",
+    image: () => {
+       return (
+          <Image src={CyberStart} alt="Cyber Start America Logo" />
+       );
+    },
     eventName: "Cyber Start America",
     eventLink: "https://www.cyberstartamerica.org/",
     roles: [
@@ -81,8 +104,11 @@ export const ENG_activitiesList: Array<Activity> = [
     ],
   },
   {
-    imgSrc: "./InspiritAI.png",
-    imgAlt: "Inspirit AI Scholars Program Logo",
+    image: () => {
+       return (
+          <Image src={Inspirit} alt="Inspirit AI Scholars Program Logo" />
+       );
+    },
     eventName: "Inspirit AI Scholars Program",
     eventLink: "https://www.inspiritai.com/",
     roles: [
@@ -98,8 +124,11 @@ export const ENG_activitiesList: Array<Activity> = [
 
 export const ENG_awardsList: Array<Activity> = [
   {
-    imgSrc: "./CodeQuestLogo.jpg",
-    imgAlt: "Code Quest Logo",
+    image: () => {
+       return (
+          <Image src={CodeQuest} alt="Code Quest Logo" />
+       );
+    },
     eventName: "Code Quest",
     eventLink:
       "https://www.lockheedmartin.com/en-us/who-we-are/communities/codequest.html",
@@ -119,8 +148,11 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    imgSrc: "./NCSScholar.png",
-    imgAlt: "National Cyber Scholar Badge",
+    image: () => {
+       return (
+          <Image src={NCSScholar} alt="National Cyber Scholar Badge" />
+       );
+    },
     eventName: "National Cyber Scholar",
     eventLink:
       "https://www.nationalcyberscholarship.org/scholarships-and-awards/awards-2024",
@@ -134,8 +166,11 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    imgSrc: "./GSMSTSeal.png",
-    imgAlt: "GSMST Seal",
+    image: () => {
+       return (
+          <Image src={GSMST} alt="GSMST Seal" />
+       );
+    },
     eventName: "School Awards",
     eventLink: "",
     roles: [
@@ -153,8 +188,11 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    imgSrc: "./HackGwinnettLogo.png",
-    imgAlt: "Hack Gwinnet Logo",
+    image: () => {
+       return (
+          <Image src={HackGwinnett} alt="Hack Gwinnett Logo" />
+       );
+    },
     eventName: "Hack Gwinnet",
     eventLink: "https://hackgwinnett.github.io/",
     roles: [
@@ -173,8 +211,11 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    imgSrc: "./USACOLogo.png",
-    imgAlt: "USACO Logo",
+    image: () => {
+       return (
+          <Image src={USACO} alt="USACO Logo" />
+       );
+    },
     eventName: "USACO",
     eventLink: "https://usaco.org/",
     roles: [
@@ -186,8 +227,11 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    imgSrc: "./CyberQuestLogo.png",
-    imgAlt: "Cyber Quest Logo",
+    image: () => {
+       return (
+          <Image src={CyberQuest} alt="Cyber Quest Logo" />
+       );
+    },
     eventName: "Cyber Quest",
     eventLink:
       "https://www.lockheedmartin.com/en-us/who-we-are/communities/cyber-quest.html",
@@ -358,15 +402,18 @@ export const ENG_projects: Array<Project> = [
     description: () => {
       return (
         <p>
-          For my CSP create PT task, I created a game based off of [Gomoku, or
-          five in a row,](https://en.wikipedia.org/wiki/Gomoku). I created a
-          system where the player could choose whatever board size they wanted
-          and the number of pieces in a row needed for victory. For example,
-          someone could choose a board size of 3*3 and a win condition of three
-          in a row to mimic tic tac toe, or they could choose a 15*15 board with
-          a win condition of five in a row to play Gomoku. The program only
-          checks the last placed piece for five in a row, ensuring the
-          application would not lag if the players choose a large board size.
+          For my CSP create PT task, I created a game based off of{" "}
+          <a href="https://en.wikipedia.org/wiki/Gomoku" className="text-sky-400 hover:text-sky-500">
+            Gomoku, or five in a row
+          </a>
+          . I created a system where the player could choose whatever board size
+          they wanted and the number of pieces in a row needed for victory. For
+          example, someone could choose a board size of 3x3 and a win condition
+          of three in a row to mimic tic tac toe, or they could choose a 15x15
+          board with a win condition of five in a row to play Gomoku. The
+          program only checks the last placed piece for five in a row, ensuring
+          the application would not lag if the players choose a large board
+          size.
         </p>
       );
     },
