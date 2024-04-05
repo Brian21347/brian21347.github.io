@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+    width: 12rem;
+    border-radius: .5rem;
+}
+
 .light, div.light > * {
     // text box backgrounds
     --white: #ffffff;

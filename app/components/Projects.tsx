@@ -16,7 +16,7 @@ export default function Projects() {
               {project.name}
             </p>
             <project.description />
-            <br/>
+            <br />
           </div>
         ))}
       </div>
