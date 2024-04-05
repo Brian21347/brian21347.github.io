@@ -21,12 +21,7 @@ export const ENG_navLinks = [
 export const ENG_activitiesList: Array<Activity> = [
   {
     image: () => {
-        return (
-            <Image
-            src={ACBA}
-            alt="ACBA Logo"
-            />
-        )
+      return <Image src={ACBA} alt="ACBA Logo" />;
     },
     eventName: "Atlanta Contemporary Basketball Association",
     eventLink: "https://www.acba-us.com/about/",
@@ -65,9 +60,7 @@ export const ENG_activitiesList: Array<Activity> = [
   },
   {
     image: () => {
-       return (
-          <Image src={CSClub} alt="GSMST CS Club Logo"/>
-       );
+      return <Image src={CSClub} alt="GSMST CS Club Logo" />;
     },
     eventName: "GSMST CS Club",
     eventLink: "https://gsmstcsclub.wixsite.com/gsmstcsc",
@@ -88,9 +81,7 @@ export const ENG_activitiesList: Array<Activity> = [
   },
   {
     image: () => {
-       return (
-          <Image src={CyberStart} alt="Cyber Start America Logo" />
-       );
+      return <Image src={CyberStart} alt="Cyber Start America Logo" />;
     },
     eventName: "Cyber Start America",
     eventLink: "https://www.cyberstartamerica.org/",
@@ -105,9 +96,7 @@ export const ENG_activitiesList: Array<Activity> = [
   },
   {
     image: () => {
-       return (
-          <Image src={Inspirit} alt="Inspirit AI Scholars Program Logo" />
-       );
+      return <Image src={Inspirit} alt="Inspirit AI Scholars Program Logo" />;
     },
     eventName: "Inspirit AI Scholars Program",
     eventLink: "https://www.inspiritai.com/",
@@ -125,9 +114,7 @@ export const ENG_activitiesList: Array<Activity> = [
 export const ENG_awardsList: Array<Activity> = [
   {
     image: () => {
-       return (
-          <Image src={CodeQuest} alt="Code Quest Logo" />
-       );
+      return <Image src={CodeQuest} alt="Code Quest Logo" />;
     },
     eventName: "Code Quest",
     eventLink:
@@ -149,9 +136,7 @@ export const ENG_awardsList: Array<Activity> = [
   },
   {
     image: () => {
-       return (
-          <Image src={NCSScholar} alt="National Cyber Scholar Badge" />
-       );
+      return <Image src={NCSScholar} alt="National Cyber Scholar Badge" />;
     },
     eventName: "National Cyber Scholar",
     eventLink:
@@ -167,9 +152,7 @@ export const ENG_awardsList: Array<Activity> = [
   },
   {
     image: () => {
-       return (
-          <Image src={GSMST} alt="GSMST Seal" />
-       );
+      return <Image src={GSMST} alt="GSMST Seal" />;
     },
     eventName: "School Awards",
     eventLink: "",
@@ -189,9 +172,7 @@ export const ENG_awardsList: Array<Activity> = [
   },
   {
     image: () => {
-       return (
-          <Image src={HackGwinnett} alt="Hack Gwinnett Logo" />
-       );
+      return <Image src={HackGwinnett} alt="Hack Gwinnett Logo" />;
     },
     eventName: "Hack Gwinnet",
     eventLink: "https://hackgwinnett.github.io/",
@@ -212,9 +193,7 @@ export const ENG_awardsList: Array<Activity> = [
   },
   {
     image: () => {
-       return (
-          <Image src={USACO} alt="USACO Logo" />
-       );
+      return <Image src={USACO} alt="USACO Logo" />;
     },
     eventName: "USACO",
     eventLink: "https://usaco.org/",
@@ -228,9 +207,7 @@ export const ENG_awardsList: Array<Activity> = [
   },
   {
     image: () => {
-       return (
-          <Image src={CyberQuest} alt="Cyber Quest Logo" />
-       );
+      return <Image src={CyberQuest} alt="Cyber Quest Logo" />;
     },
     eventName: "Cyber Quest",
     eventLink:
@@ -249,13 +226,13 @@ export const ENG_awardsList: Array<Activity> = [
 export const ENG_projects: Array<Project> = [
   {
     name: "Number Guessing Game",
-    videoSrc: "",
+    videoSrc: "../../public/videos/GameOfLife.mp4",
     description: () => {
       return (
         <p>
           This was my first ever programming project and I created it during
           seventh grade summer when I in a five day programming boot camp. I
-          learned about Python's syntax and some foundational knowledge then
+          learned about Python&apos;s syntax and some foundational knowledge then
           went on to create a number guessing game with various modes. The
           different modes were different functions which were only called to
           give a hint to the player based on their guess. The main loop of
@@ -332,7 +309,7 @@ export const ENG_projects: Array<Project> = [
     description: () => {
       return (
         <p>
-          While in middle school, I was inspired to create a Conway's game of
+          While in middle school, I was inspired to create a Conway&apos;s game of
           life simulator after reading about it from a AoPS book. Through this
           project, I was introduced to Pygame, algorithm efficiency, and
           foundational game development concepts (such as the game loop, frames,
@@ -403,7 +380,10 @@ export const ENG_projects: Array<Project> = [
       return (
         <p>
           For my CSP create PT task, I created a game based off of{" "}
-          <a href="https://en.wikipedia.org/wiki/Gomoku" className="text-sky-400 hover:text-sky-500">
+          <a
+            href="https://en.wikipedia.org/wiki/Gomoku"
+            className="text-sky-400 hover:text-sky-500"
+          >
             Gomoku, or five in a row
           </a>
           . I created a system where the player could choose whatever board size
@@ -438,7 +418,7 @@ export const ENG_projects: Array<Project> = [
     description: () => {
       return (
         <p>
-          Part of Inspirit AI's AI scholars program, I collaborated with four
+          Part of Inspirit AI&apos;s AI scholars program, I collaborated with four
           other people during winter break to create an emotion detector AI
           model. The AI model had an accuracy of around 65% when detecting
           between five emotions and had a precision of ... and recall of ... .
