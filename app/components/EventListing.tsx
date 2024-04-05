@@ -5,10 +5,10 @@ export default function EventListing(props: any) {
     <>
       {props.activities.map((activity: Activity) => (
         <div className="flex items-start text-text-0" key={activity.eventName}>
-          <div className="hidden md:flex w-[12rem] rounded-lg">
-            <activity.image />
-          </div>
-          <div className="rounded-lg p-2 ml-10">
+          <div className="p-2 ml-10">
+            <center>
+              <activity.image />
+            </center>
             <a href={activity.eventLink} className="hover:text-sky-4 font-bold">
               {activity.eventName}
             </a>
