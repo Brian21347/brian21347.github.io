@@ -32,8 +32,11 @@
                 "./app/components/*"
             ],
             "@/constants": [
-                "./app/constants"
+                "./app/constants/*"
             ],
+            "@/images": [
+                "./app/../public/images/*"
+            ]
         }
     },
     "include": [

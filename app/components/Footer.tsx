@@ -9,13 +9,13 @@ export default function Footer() {
         <div className="flex border-t-2 border-slate-4 border-dotted"></div>
       </div>
       {/* GitHub logo */}
-      <div className="items-center content-center justify-items-center">
+      <div>
         <Link
           href="https://github.com/Brian21347/brian-zhou.github.io"
-          className="m-auto justify-center "
+          className="justify-center w-98" id="github-logo"
         >
           <svg
-            className="justify-content scale-75 object-center position-absolute"
+            className="justify-content scale-75"
             width="98"
             height="96"
             xmlns="http://www.w3.org/2000/svg"
