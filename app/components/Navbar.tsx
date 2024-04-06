@@ -53,7 +53,7 @@ export default function Navbar({}) {
             <NavLinks />
           </div>
           <div className="flex gap-10 z-30">
-            <Dropdown />
+            {/* <Dropdown /> */}
             <ThemeSwitch />
           </div>
           <Popover className="md:hidden">
