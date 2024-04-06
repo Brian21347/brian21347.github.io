@@ -8,7 +8,6 @@ export default function Footer() {
         <p>Github</p>
         <div className="flex border-t-2 border-slate-4 border-dotted"></div>
       </div>
-      <video src="/videos/GameOfLife.mp4" />
       {/* GitHub logo */}
       <div>
         <Link

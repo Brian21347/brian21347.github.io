@@ -12,6 +12,9 @@ export default function Projects() {
         </div>
         {ENG_projects.map((project: Project) => (
           <div key={project.name}>
+            {project.videoSrc !== "" && (
+              <video src={project.videoSrc} controls autoPlay muted />
+            )}
             <p className="text-centered font-semibold text-xl">
               {project.name}
             </p>

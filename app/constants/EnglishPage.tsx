@@ -1,15 +1,5 @@
 import { Project, Activity } from "@/constants/Types";
 import Image from "next/image";
-import ACBA from "../../public/images/ACBA.webp";
-import CodeQuest from "../../public/images/CodeQuestLogo.jpg";
-import CSClub from "../../public/images/CSClubLogo.png";
-import CyberQuest from "../../public/images/CyberQuestLogo.png";
-import CyberStart from "../../public/images/CyberStartAmericaLogo.png";
-import GSMST from "../../public/images/GSMSTSeal.png";
-import HackGwinnett from "../../public/images/HackGwinnettLogo.png";
-import Inspirit from "../../public/images/InspiritAI.png";
-import NCSScholar from "../../public/images/NCSScholar.png";
-import USACO from "../../public/images/USACOLogo.png";
 
 export const ENG_navLinks = [
   { _id: 1, title: "About", href: "#about" },
@@ -20,9 +10,8 @@ export const ENG_navLinks = [
 
 export const ENG_activitiesList: Array<Activity> = [
   {
-    image: () => {
-      return <Image src={ACBA} alt="ACBA Logo" />;
-    },
+    imgSrc: "/images/ACBA.webp",
+    imgAlt: "ACBA Logo",
     eventName: "Atlanta Contemporary Basketball Association",
     eventLink: "https://www.acba-us.com/about/",
     roles: [
@@ -59,9 +48,8 @@ export const ENG_activitiesList: Array<Activity> = [
     ],
   },
   {
-    image: () => {
-      return <Image src={CSClub} alt="GSMST CS Club Logo" />;
-    },
+    imgSrc: "/images/CSClubLogo.png",
+    imgAlt: "GSMST CS Club Logo",
     eventName: "GSMST CS Club",
     eventLink: "https://gsmstcsclub.wixsite.com/gsmstcsc",
     roles: [
@@ -80,9 +68,8 @@ export const ENG_activitiesList: Array<Activity> = [
     ],
   },
   {
-    image: () => {
-      return <Image src={CyberStart} alt="Cyber Start America Logo" />;
-    },
+    imgSrc: "/images/CyberStartAmericaLogo.png",
+    imgAlt: "Cyber Start America Logo",
     eventName: "Cyber Start America",
     eventLink: "https://www.cyberstartamerica.org/",
     roles: [
@@ -95,9 +82,8 @@ export const ENG_activitiesList: Array<Activity> = [
     ],
   },
   {
-    image: () => {
-      return <Image src={Inspirit} alt="Inspirit AI Scholars Program Logo" />;
-    },
+    imgSrc: "/images/InspiritAI.png",
+    imgAlt: "Inspirit AI Scholars Program Logo",
     eventName: "Inspirit AI Scholars Program",
     eventLink: "https://www.inspiritai.com/",
     roles: [
@@ -113,9 +99,8 @@ export const ENG_activitiesList: Array<Activity> = [
 
 export const ENG_awardsList: Array<Activity> = [
   {
-    image: () => {
-      return <Image src={CodeQuest} alt="Code Quest Logo" />;
-    },
+    imgSrc: "/images/CodeQuestLogo.jpg",
+    imgAlt: "Code Quest Logo",
     eventName: "Code Quest",
     eventLink:
       "https://www.lockheedmartin.com/en-us/who-we-are/communities/codequest.html",
@@ -135,9 +120,8 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    image: () => {
-      return <Image src={NCSScholar} alt="National Cyber Scholar Badge" />;
-    },
+    imgSrc: "/images/NCSScholar.png",
+    imgAlt: "National Cyber Scholar Badge",
     eventName: "National Cyber Scholar",
     eventLink:
       "https://www.nationalcyberscholarship.org/scholarships-and-awards/awards-2024",
@@ -151,9 +135,8 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    image: () => {
-      return <Image src={GSMST} alt="GSMST Seal" />;
-    },
+    imgSrc: "/images/GSMSTSeal.png",
+    imgAlt: "GSMST Seal",
     eventName: "School Awards",
     eventLink: "",
     roles: [
@@ -163,7 +146,7 @@ export const ENG_awardsList: Array<Activity> = [
         description: "Recognition of academic excellence in the fall semester.",
       },
       {
-        title: "Academic Leter",
+        title: "Academic Letter",
         time: "2023",
         description:
           "Academic letter recognizes academic excellence (NGA > 94).",
@@ -171,20 +154,19 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    image: () => {
-      return <Image src={HackGwinnett} alt="Hack Gwinnett Logo" />;
-    },
-    eventName: "Hack Gwinnet",
+    imgSrc: "/images/HackGwinnettLogo.png",
+    imgAlt: "Hack Gwinnett Logo",
+    eventName: "Hack Gwinnett",
     eventLink: "https://hackgwinnett.github.io/",
     roles: [
       {
-        title: "2nd place at 2023 Hack Gwinnet",
+        title: "2nd place at 2023 Hack Gwinnett",
         time: "",
         description:
           "Second palace in 28 projects for the project we developed during the hackathon.",
       },
       {
-        title: "3rd place at 2022 Hack Gwinnet",
+        title: "3rd place at 2022 Hack Gwinnett",
         time: "",
         description:
           "Third place in 45 teams for the project which we developed during the hackathon.",
@@ -192,9 +174,8 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    image: () => {
-      return <Image src={USACO} alt="USACO Logo" />;
-    },
+    imgSrc: "/images/USACOLogo.png",
+    imgAlt: "USACO Logo",
     eventName: "USACO",
     eventLink: "https://usaco.org/",
     roles: [
@@ -206,9 +187,8 @@ export const ENG_awardsList: Array<Activity> = [
     ],
   },
   {
-    image: () => {
-      return <Image src={CyberQuest} alt="Cyber Quest Logo" />;
-    },
+    imgSrc: "/images/CyberQuestLogo.png",
+    imgAlt: "Cyber Quest Logo",
     eventName: "Cyber Quest",
     eventLink:
       "https://www.lockheedmartin.com/en-us/who-we-are/communities/cyber-quest.html",
@@ -226,14 +206,15 @@ export const ENG_awardsList: Array<Activity> = [
 export const ENG_projects: Array<Project> = [
   {
     name: "Number Guessing Game",
-    videoSrc: "../../public/videos/GameOfLife.mp4",
+    repo: "",
+    videoSrc: "",
     description: () => {
       return (
         <p>
           This was my first ever programming project and I created it during
           seventh grade summer when I in a five day programming boot camp. I
-          learned about Python&apos;s syntax and some foundational knowledge then
-          went on to create a number guessing game with various modes. The
+          learned about Python&apos;s syntax and some foundational knowledge
+          then went on to create a number guessing game with various modes. The
           different modes were different functions which were only called to
           give a hint to the player based on their guess. The main loop of
           validating player input and checking that input against the target
@@ -245,7 +226,8 @@ export const ENG_projects: Array<Project> = [
   },
   {
     name: "Minesweeper",
-    videoSrc: "",
+    repo: "https://github.com/Brian21347/Minesweeper-Clone",
+    videoSrc: "/videos/Minesweeper.mp4",
     description: () => {
       return (
         <p>
@@ -265,7 +247,8 @@ export const ENG_projects: Array<Project> = [
   },
   {
     name: "Tetris",
-    videoSrc: "",
+    repo: "https://github.com/Brian21347/Tetris-Clone",
+    videoSrc: "/videos/Tetris.mp4",
     description: () => {
       return (
         <p>
@@ -286,7 +269,8 @@ export const ENG_projects: Array<Project> = [
   },
   {
     name: "Choose Your own Adventure Game***",
-    videoSrc: "",
+    repo: "https://github.com/Brian21347/Choose-Your-Own-Adventure",
+    videoSrc: "/videos/CYOA.mp4",
     description: () => {
       return (
         <p>
@@ -305,13 +289,14 @@ export const ENG_projects: Array<Project> = [
   },
   {
     name: "Conway's Game of Life",
-    videoSrc: "",
+    repo: "https://github.com/Brian21347/Game-of-Life",
+    videoSrc: "/videos/GameOfLife.mp4",
     description: () => {
       return (
         <p>
-          While in middle school, I was inspired to create a Conway&apos;s game of
-          life simulator after reading about it from a AoPS book. Through this
-          project, I was introduced to Pygame, algorithm efficiency, and
+          While in middle school, I was inspired to create a Conway&apos;s game
+          of life simulator after reading about it from a AoPS book. Through
+          this project, I was introduced to Pygame, algorithm efficiency, and
           foundational game development concepts (such as the game loop, frames,
           and keyboard input).
         </p>
@@ -320,7 +305,8 @@ export const ENG_projects: Array<Project> = [
   },
   {
     name: "Typing Piano",
-    videoSrc: "",
+    repo: "https://github.com/legitminh/typingPiano",
+    videoSrc: "/videos/TypingPiano.mp4",
     description: () => {
       return (
         <p>
@@ -349,16 +335,17 @@ export const ENG_projects: Array<Project> = [
     },
   },
   {
-    name: "Number Cruncher",
-    videoSrc: "",
+    name: "24 Game Calculator",
+    repo: "https://github.com/Brian21347/24-Game-Calculator/",
+    videoSrc: "/videos/24GameCalc.mp4",
     description: () => {
       return (
         <p>
           Over the summer of ninth grade, I created an application to calculate
-          all ways of reaching a certain score (such as 24) with a constant
-          number of operators and operands after playing a similar calculation
-          game with my cousins. During this time, I started diving into
-          competitive programming, so I tried making the most efficient
+          all ways of reaching a certain score (traditionally 24) with a
+          constant number of operators and operands after playing a similar
+          calculation game with my cousins. During this time, I started diving
+          into competitive programming, so I tried making the most efficient
           algorithm for this problem. After learning about it while preparing
           for the ACSL competition, I used prefix notation to create all
           possible combinations of equations. I then used Sympy to cut down on
@@ -375,7 +362,8 @@ export const ENG_projects: Array<Project> = [
   },
   {
     name: "X in a Row",
-    videoSrc: "",
+    repo: "https://github.com/Brian21347/X-in-a-Row",
+    videoSrc: "/videos/XInARow.mp4",
     description: () => {
       return (
         <p>
@@ -400,7 +388,8 @@ export const ENG_projects: Array<Project> = [
   },
   {
     name: "Wordle",
-    videoSrc: "",
+    repo: "https://github.com/Brian21347/Wordle-Clone",
+    videoSrc: "/videos/Wordle.mp4",
     description: () => {
       return (
         <p>
@@ -413,19 +402,27 @@ export const ENG_projects: Array<Project> = [
     },
   },
   {
-    name: "Emotion Detector*****",
-    videoSrc: "",
+    name: "Emotion Detector",
+    repo: "",
+    videoSrc: "/videos/CNNModel.mp4",
     description: () => {
       return (
-        <p>
-          Part of Inspirit AI&apos;s AI scholars program, I collaborated with four
-          other people during winter break to create an emotion detector AI
-          model. The AI model had an accuracy of around 65% when detecting
-          between five emotions and had a precision of ... and recall of ... .
-          Though this model is not very accurate, I got to establish a strong
-          foundation in machine learning and gain some experience creating
-          models.
-        </p>
+        <>
+          <p>
+            Part of Inspirit AI&apos;s AI scholars program, I collaborated with
+            four other people during winter break to create an emotion detector
+            AI model. The AI model had an accuracy of around 50% when
+            detecting between five emotions. Though this model is not very
+            accurate, I got to establish a strong foundation in machine learning
+            and gain some experience creating models.
+          </p>
+          <Image
+            src="/images/ConfusionMatrix.png"
+            alt="Confusion Matrix for the MLP model"
+            width="360"
+            height="360"
+          />
+        </>
       );
     },
   },
