@@ -3,7 +3,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects"
 import Activities from "@/components/Activities"
 import Awards from "@/components/Awards";
-import Footer from "@/components/Footer";
+import Contacts from "@/components/Contacts";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <Projects />
         <Activities />
         <Awards />
-        <Footer />
+        <Contacts />
       </div>
   );
 }

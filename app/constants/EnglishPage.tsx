@@ -6,6 +6,7 @@ export const ENG_navLinks = [
   { _id: 2, title: "Projects", href: "#projects" },
   { _id: 3, title: "Activities", href: "#activities" },
   { _id: 4, title: "Awards", href: "#awards" },
+  { _id: 5, title: "Contacts", href: "#contacts" },
 ];
 
 export const ENG_activitiesList: Array<Activity> = [
@@ -411,10 +412,10 @@ export const ENG_projects: Array<Project> = [
           <p>
             Part of Inspirit AI&apos;s AI scholars program, I collaborated with
             four other people during winter break to create an emotion detector
-            AI model. The AI model had an accuracy of around 50% when
-            detecting between five emotions. Though this model is not very
-            accurate, I got to establish a strong foundation in machine learning
-            and gain some experience creating models.
+            AI model. The AI model had an accuracy of around 50% when detecting
+            between five emotions. Though this model is not very accurate, I got
+            to establish a strong foundation in machine learning and gain some
+            experience creating models.
           </p>
           <Image
             src="/images/ConfusionMatrix.png"
