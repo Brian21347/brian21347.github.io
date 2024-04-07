@@ -185,7 +185,7 @@ export const ENG_awardsList: Array<Activity> = [
         title: "USACO Silver Medalist",
         time: "2024",
         description:
-          "I scored a perfect score in the bronze division of the 2024 January USACOcompetition and became a USACO silver medalist.",
+          "I scored a perfect score in the bronze division of the 2024 January USACO competition and became a USACO silver medalist.",
       },
     ],
   },
