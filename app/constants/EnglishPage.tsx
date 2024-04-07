@@ -18,7 +18,7 @@ export const ENG_activitiesList: Array<Activity> = [
     roles: [
       {
         title: "Coding II Tutor",
-        time: "10th grade",
+        time: "First semester of 10th grade",
         description:
           "I created a projected-based computer science course that is based on, and extends, the CSA curriculum. In our weekly sessions, students delve into topics ranging from data types to inheritance and polymorphism.",
       },
@@ -30,21 +30,21 @@ export const ENG_activitiesList: Array<Activity> = [
       },
       {
         title: "Chinese Tutor",
-        time: "Summer of 9th grade - 10th grade",
+        time: "Summer of 9th grade - End of first semester of 10th grade",
         description:
           "I pioneered a unique Chinese program at ACBA, centered around sparking student interest in Chinese through the recitation of renowned Chinese poetry and engaging tongue twisters.",
       },
       {
         title: "Math Tutor",
-        time: "9th grade - 10th grade",
+        time: "Second semester of 9th grade - First semester of 10th grade",
         description:
-          "Since the beginning of my second semester in ninth grade, I have been actively tutoring mathematics to elementary and middle school students. The curriculum I employ is partially rooted in Singapore math principles, but I also adapt it to cater to the unique needs of each student.",
+          "Since the beginning of my second semester in ninth grade, I have tutored mathematics to elementary and middle school students. The curriculum is partially based on the Singapore math text books, but I also adapt it to cater to the unique needs of each student.",
       },
       {
         title: "Writer",
         time: "Summer of 9th grade",
         description:
-          "I wrote three essays promoting ACBA's programs and interviewed over twenty people in the process.",
+          "I wrote three reports promoting ACBA's programs and interviewed over twenty people to gather the information for the reports.",
       },
     ],
   },
@@ -58,13 +58,13 @@ export const ENG_activitiesList: Array<Activity> = [
         title: "Assistant Algorithmic Programming Head",
         time: "10th grade",
         description:
-          "I curate weekly problem sets and deliver presentations that explore a variety of algorithmic programming topics, including dynamic programming, graph theory, and greedy algorithms. I spend around three hours each week creating the problem set and preparing the slides.",
+          "I curate weekly problem sets and deliver presentations that explore a variety of algorithmic programming topics, including dynamic programming, graph theory, and greedy algorithms. In addition to traditional algorithms, the algorithmic programming curriculum also covers content from the American Computer Science League (ACSL).",
       },
       {
         title: "CyberPatriot Team Psi",
         time: "10th grade",
         description:
-          "As a member of a six-person team, I participated in the state competition within the platinum division of the CyberPatriot competition. My specific role in the team was to solve networking portions of CyberPatriot challenges.",
+          "As a member of a six-person team, I participated in the state competition within the platinum division of the CyberPatriot competition. My role in the team was to solve Cisco networking portions of CyberPatriot challenges. This involved submitting a quiz cover networking components and finishing a Cisco Packet Tracer module according to the specifications.",
       },
     ],
   },
@@ -110,7 +110,7 @@ export const ENG_awardsList: Array<Activity> = [
         title: "4th place at 2023 Code Quest",
         time: "",
         description:
-          "Code Quest, an annual computer programming competition hosted by Lockheed Martin, stands as a prestigious platform for high school students. In the 2023 edition of Code Quest, my team represented GSMST at the Marietta location. We achieved an impressive score of 160 points, securing first place in the novice division and tying for fourth place overall.",
+          "Code Quest, an annual computer programming competition hosted by Lockheed Martin, stands as a prestigious platform for high school students. In the 2023 edition of Code Quest, my team represented GSMST at the Marietta location. We achieved a score of 160 points, securing first place in the novice division and fourth place overall.",
       },
       {
         title: "4th place at 2024 Code Quest",
@@ -131,7 +131,7 @@ export const ENG_awardsList: Array<Activity> = [
         title: "",
         time: "2024",
         description:
-          "The National Cyber Scholar scholarship, awarded by the National Cyber Scholarship Foundation, is bestowed upon the most accomplished CyberStart players. It encompasses a $3,000 allocation for training materials, and I am honored to have been a recipient of this scholarship.",
+          "The National Cyber Scholar scholarship, awarded by the National Cyber Scholarship Foundation, is bestowed upon the best scoring CyberStart players. It allocates $3,000 for training materials, and I am honored to be one of the 2000 or so students to receive the scholarship this year.",
       },
     ],
   },
@@ -144,13 +144,14 @@ export const ENG_awardsList: Array<Activity> = [
       {
         title: "Fall Awards",
         time: "2023",
-        description: "Recognition of academic excellence in the fall semester.",
+        description:
+          "The fall awards are given to one to two students per class. I received the award for AP World History.",
       },
       {
         title: "Academic Letter",
         time: "2023",
         description:
-          "Academic letter recognizes academic excellence (NGA > 94).",
+          "The academic letter is given to students with a weighted NGA greater than 94 to recognize academic excellence.",
       },
     ],
   },
@@ -164,13 +165,13 @@ export const ENG_awardsList: Array<Activity> = [
         title: "2nd place at 2023 Hack Gwinnett",
         time: "",
         description:
-          "Second palace in 28 projects for the project we developed during the hackathon.",
+          "I worked with Minh to create the game called Net Zero Hero for the theme of environment in Hack Gwinnett 2023, securing second place out of the 28 projects developed during the hackathon.",
       },
       {
         title: "3rd place at 2022 Hack Gwinnett",
         time: "",
         description:
-          "Third place in 45 teams for the project which we developed during the hackathon.",
+          "I worked with Minh to attain third place in 45 teams for the maze game. This was the first time Minh and I competed in a hackathon and we were very encouraged to continue competing with our score.",
       },
     ],
   },
@@ -183,7 +184,8 @@ export const ENG_awardsList: Array<Activity> = [
       {
         title: "USACO Silver Medalist",
         time: "2024",
-        description: "I am a USACO silver medalist.",
+        description:
+          "I scored a perfect score in the bronze division of the 2024 January USACOcompetition and became a USACO silver medalist.",
       },
     ],
   },
@@ -269,7 +271,7 @@ export const ENG_projects: Array<Project> = [
     },
   },
   {
-    name: "Choose Your own Adventure Game***",
+    name: "Choose Your own Adventure Game",
     repo: "https://github.com/Brian21347/Choose-Your-Own-Adventure",
     videoSrc: "/videos/CYOA.mp4",
     description: () => {
@@ -283,7 +285,9 @@ export const ENG_projects: Array<Project> = [
           understanding of parsing and challenge myself to create an effective
           system to represent information. While creating the choose your own
           adventure story, I learned far more of Java than was and would be
-          covered in CSA, such as Enumerators, file input/output, and ...
+          covered in CSA, such as Enumerators and file input/output. I made a
+          similar version of this project for my coding II students and hope
+          they will find it interesting too.
         </p>
       );
     },
