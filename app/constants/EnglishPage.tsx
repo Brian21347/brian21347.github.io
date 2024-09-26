@@ -110,7 +110,7 @@ export const ENG_awardsList: Array<Activity> = [
         title: "GFACT certification",
         time: "June 2024",
         description:
-          "I attained GFACT certification after receiving a scholarship from the NCSF (National Cyber Scholarship Foundation) for the SANS Foundations course and one attempt at GIAC Foundational Cybersecurity Technologies (GFACT) exam. It is a shame that CyberStartAmerica ended because I really enjoyed the challenging CTF style puzzles, hopefully it will be picked up again by another organization.",
+          "I got the GFACT certification after receiving a scholarship from the NCSF (National Cyber Scholarship Foundation) for the SANS Foundations course and an attempt at GIAC Foundational Cybersecurity Technologies (GFACT) exam. I am very grateful that NCSF awarded me this scholarship and it is a shame that Cyber Start America ended because I really enjoyed the challenging CTF style puzzles.",
       },
     ],
   },
