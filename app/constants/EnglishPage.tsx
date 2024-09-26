@@ -100,6 +100,21 @@ export const ENG_activitiesList: Array<Activity> = [
 
 export const ENG_awardsList: Array<Activity> = [
   {
+    imgSrc: "/images/GFACTBadge.png",
+    imgAlt: "GFACT Badge",
+    eventName: "GFACT certification",
+    eventLink:
+      "https://www.credly.com/badges/8547bc28-07df-4e57-bd88-353bef6d4538/public_url",
+    roles: [
+      {
+        title: "GFACT certification",
+        time: "June 2024",
+        description:
+          "I attained GFACT certification after receiving a scholarship from the NCSF (National Cyber Scholarship Foundation) for the SANS Foundations course and one attempt at GIAC Foundational Cybersecurity Technologies (GFACT) exam. It is a shame that CyberStartAmerica ended because I really enjoyed the challenging CTF style puzzles, hopefully it will be picked up again by another organization.",
+      },
+    ],
+  },
+  {
     imgSrc: "/images/CodeQuestLogo.jpg",
     imgAlt: "Code Quest Logo",
     eventName: "Code Quest",
@@ -110,13 +125,13 @@ export const ENG_awardsList: Array<Activity> = [
         title: "4th place at 2023 Code Quest",
         time: "",
         description:
-          "Code Quest, an annual computer programming competition hosted by Lockheed Martin, stands as a prestigious platform for high school students. In the 2023 edition of Code Quest, my team represented GSMST at the Marietta location. We achieved a score of 160 points, securing first place in the novice division and fourth place overall.",
+          "James, Minh, and I went to Code Quest, an computer programming competition hosted by Lockheed Martin, representing GSMST at Marietta and scored of 160 points, getting first place in the novice division and fourth place overall. It was very fun to apply the algorithms I learned about in competition and it felt extremely rewarding to be rewarded for my hard work.",
       },
       {
         title: "4th place at 2024 Code Quest",
         time: "",
         description:
-          "In the 2023 edition of Code Quest, my team represented GSMST at the Marietta location. We achieved a score of 270 points, securing fourth place overall.",
+          "In Code Quest 2024, we (James, Minh, and me) represented GSMST at Marietta. This time we scored 270 points, getting fourth place overall. We definitely improved significantly since the last competition, but South Forsyth dominated and a single person team nearly doubled our score. I hope we will do better next year.",
       },
     ],
   },
@@ -131,7 +146,7 @@ export const ENG_awardsList: Array<Activity> = [
         title: "",
         time: "2024",
         description:
-          "The National Cyber Scholar scholarship, awarded by the National Cyber Scholarship Foundation, is bestowed upon the best scoring CyberStart players. It allocates $3,000 for training materials, and I am honored to be one of the 2000 or so students to receive the scholarship this year.",
+          "The National Cyber Scholar scholarship, awarded by the National Cyber Scholarship Foundation, is given to the best scoring CyberStart players. It pays $3,000 for training materials, and I am exited to be one of the 2000 or so students to get it this year.",
       },
     ],
   },
@@ -149,7 +164,7 @@ export const ENG_awardsList: Array<Activity> = [
       },
       {
         title: "Academic Letter",
-        time: "2023",
+        time: "2023, 2024",
         description:
           "The academic letter is given to students with a weighted NGA greater than 94 to recognize academic excellence.",
       },
@@ -165,13 +180,13 @@ export const ENG_awardsList: Array<Activity> = [
         title: "2nd place at 2023 Hack Gwinnett",
         time: "",
         description:
-          "I worked with Minh to create the game called Net Zero Hero for the theme of environment in Hack Gwinnett 2023, securing second place out of the 28 projects developed during the hackathon.",
+          "I worked with Minh to create the game called Net Zero Hero under the theme of environment in Hack Gwinnett 2023, securing second place out of the 28 projects developed during the hackathon.",
       },
       {
         title: "3rd place at 2022 Hack Gwinnett",
         time: "",
         description:
-          "I worked with Minh to attain third place in 45 teams for the maze game. This was the first time Minh and I competed in a hackathon and we were very encouraged to continue competing with our score.",
+          "I worked with Minh to create the for the maze game. This was the first time Minh and I competed in a hackathon and we were very happy that we podiumed.",
       },
     ],
   },
@@ -185,7 +200,7 @@ export const ENG_awardsList: Array<Activity> = [
         title: "USACO Silver Medalist",
         time: "2024",
         description:
-          "I scored a perfect score in the bronze division of the 2024 January USACO competition and became a USACO silver medalist.",
+          "I scored a perfect score in the bronze division of USACO in January!",
       },
     ],
   },
@@ -214,15 +229,15 @@ export const ENG_projects: Array<Project> = [
     description: () => {
       return (
         <p>
-          This was my first ever programming project and I created it during
-          seventh grade summer when I in a five day programming boot camp. I
+          This was my first ever programming project and I created it during the
+          seventh grade summer when I was in a five-day programming boot camp. I
           learned about Python&apos;s syntax and some foundational knowledge
           then went on to create a number guessing game with various modes. The
-          different modes were different functions which were only called to
-          give a hint to the player based on their guess. The main loop of
-          validating player input and checking that input against the target
-          number was not rewritten in the various functions, but was part of the
-          main function and used a tag to know which function should be called.
+          different modes were different functions that were only called to give
+          a hint to the player based on their guess. The main loop of validating
+          player input and checking that input against the target number was not
+          rewritten in the various functions but was part of the main function
+          and used a tag to know which function should be called.
         </p>
       );
     },
@@ -431,6 +446,36 @@ export const ENG_projects: Array<Project> = [
       );
     },
   },
-  // project_snake: "",
-  // project_botsAndTiles: "",
+  //   {
+  //     name: "Net Zero Hero",
+  //     repo: "https://github.com/legitminh/Net-Zero-Hero",
+  //     videoSrc: "",
+  //     description: () => {
+  //         return (
+  //             <>
+  //             <p>
+  //                 I worked with Minh to create a game focused on environmental conservation efforts as part of
+  //                 HackGwinnett v3, held in 2023.
+  //             </p>
+  //             </>
+  //         );
+  //     }
+  //   },
+  //   {
+  //     name: "Maze Game",
+  //     repo: "https://github.com/Brian21347/MazeGame",
+  //     videoSrc: "",
+  //     description: () => {
+  //         return (
+  //             <>
+  //             <p>
+  //                 I worked
+  //             </p>
+  //             </>
+  //         );
+  //     }
+  //   },
+  // Non trivial finalist
+  // ACSL bronze
+  // Update tetris
 ];
